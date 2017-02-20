@@ -1,0 +1,85 @@
+body {
+  background-color: #fff;
+  margin: 0; }
+
+header {
+  padding-left: 330px;
+  height: 600px;
+  background-color: #3598db;
+  display: flex;
+  flex-direction: column; }
+  header .logo {
+    margin-top: 147px;
+    width: 175px;
+    height: 70px; }
+  header .slogan {
+    margin-top: 50px;
+    width: 460px; }
+    header .slogan h2 {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-weight: 100;
+      font-size: 17pt;
+      line-height: 1.4;
+      color: #fff; }
+  header .icons {
+    margin-top: 25px;
+    width: 190px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header .icons a {
+      opacity: 0.6; }
+      header .icons a:hover {
+        opacity: 1; }
+
+.features {
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .features h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: 22pt;
+    color: #1b1b1b; }
+  .features p {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 1020px;
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    color: #848484; }
+  .features .feature-line {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: center; }
+    .features .feature-line .feature-box {
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 396px; }
+
+.about {
+  height: 430px;
+  background-color: #e7e7e7; }
+
+.testimonials {
+  height: 290px; }
+
+.prices {
+  height: 660px;
+  background-color: #e7e7e7; }
+
+.getintouch {
+  height: 240px; }
+
+footer {
+  height: 135px;
+  background-color: #e7e7e7; }
