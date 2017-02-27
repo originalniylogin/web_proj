@@ -1,95 +1,294 @@
+@font-face
+    font-family: 'open_sansregular'
+    src: url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+a
+    text-decoration: none
+
 body
-    background-color: #fff
     margin: 0
+    background: #fff
 
 header
-    padding-left: 330px
-    height: 600px
-    background-color: #3598db
-    display: flex
-    flex-direction: column
-
-    .logo
-        margin-top: 147px
-        width: 175px
-        height: 70px
-
-    .slogan
-        margin-top: 50px
-        width: 460px
-
-        h2
-            margin: 0
-            font-family: Arial, sans-serif
-            font-weight: 100
-            font-size: 17pt
-            line-height: 1.4
-            color: #fff
-
-    .icons
-        margin-top: 25px
-        width: 190px
-        height: 55px
+    min-height: 600px
+    background: url(../img/header/bg.jpg)
+    .wrap
+        width: 70%
+        margin: 0 auto
         display: flex
         flex-direction: row
         justify-content: space-between
+        .header-left
+            width: 60%
+            display: flex
+            height: 600px
+            flex-direction: column
+            justify-content: center
+            p
+                margin-left: 12px
+                font-size: 1.5em
+                color: #fff
+                width: 65%
+                font-family: 'open_sansregular'
+            .apps
+                margin-left: 12px
+                a
+                    opacity: 0.5
+                    &:hover
+                        opacity: 1
+        .header-right
+            min-width: 439px
+            background: url(../img/header/iphone.png) no-repeat 100% 101%
+            height: 600px
 
-        a
-            opacity: 0.6
+.features-note
+    margin: 0 auto
+    width: 70%
+    text-align: center
+    h3
+        font-size: 2em
+        color: #232323
+        font-family: 'open_sansregular'
+        font-weight: 900
+        margin: 1.5em 0 0.5em 0
+    p
+        font-family: 'open_sansregular'
+        color: #838383
+        line-height: 1.5em
+        font-size: 1.1em
 
-            &:hover
-                opacity: 1
+.feature-box
+    margin: 0 auto
+    width: 70%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    .feature-box-item
+        margin-top: 5.5em
+        max-width: 420px
+        display: flex
+        flex-direction: column
+        align-items: center
+        h3
+            font-family: 'open_sansregular'
+            font-size: 1.5em
+            font-weight: #232323
+            font-weight: 700
+        p
+            text-align: center
+            font-family: 'open_sansregular'
+            font-size: 0.9em
+            line-height: 1.6em
+            color: #838383
+            width: 80%
+            margin: 0 auto
 
-.features
-    height: 820px
+.about
+    margin-top: 7em
+    background: #e7e7e7
+    min-height: 430px
+    .wrap
+        margin: 0 auto
+        padding: 2em 0
+        width: 73%
+        min-height: inherit
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        .about-left
+            width: 50%
+            align-self: center
+            flex-basis: auto
+            h3
+                font-family: 'open_sansregular'
+                font-size: 2em
+                font-weight: 700
+                color: #232323
+                margin-top: 0.3em
+            p, ul
+                font-family: 'open_sansregular'
+                font-size: 1.09em
+                line-height: 1.4em
+                color: #7c7c7c
+                margin-bottom: 0.8em
+            ul
+                list-style: none
+                margin-left: 1em
+                li
+                    margin-bottom: 0.3em
+                    span
+                        width: 20px
+                        height: 20px
+                        display: inline-block
+                        background: url(../img/about/bullet.png) no-repeat
+                        vertical-align: middle
+        .about-right
+            min-width: 500px
+            margin-top: 2.2em
+            iframe
+                border-radius: 0.5em
+                -webkit-border-radius: 0.5em
+                -moz-border-radius: 0.5em
+                -o-border-radius: 0.5em
+
+.reviews
+    padding: 4em 0 3.5em 0
     display: flex
     flex-direction: column
     align-items: center
-
-    h3
-        margin-top: 50px
-        margin-bottom: 30px
-        line-height: 1.5
-        font-family: Arial, sans-serif
-        font-size: 22pt
-        color: #1b1b1b
-
     p
+        font-family: 'open_sansregular'
+        font-size: 1.2em
+        line-height: 1.5em
         text-align: center
-        margin-bottom: 50px
-        max-width: 1020px
-        font-family: Arial, sans-serif
-        font-size: 15pt
-        color: #848484
-
-    .feature-line
+        color: #5c5c5c
+        width: 60%
+    h3
+        font-family: 'open_sansregular'
+        font-size: 1.2em
+        font-weight: 900
+        text-align: center
+        color: #232323
+        margin: 0
+    .selector
+        margin-top: 40px
         display: flex
-        background-color: black
         flex-direction: row
-        justify-content: center
+        justify-content: space-between
+        width: 60px
 
-        .feature-box
-            background-color: red
+.pricing
+    background: url(../img/pricing/bg.png) repeat-x
+    height: 583px
+    padding: 3em 0 2em 0
+    .wrap
+        margin: 0 auto
+        width: 80%
+        display: flex
+        flex-direction: column
+        align-items: center
+        h3
+            font-family: 'open_sansregular'
+            font-size: 2em
+            font-weight: 900
+            text-align: center
+            color: #232323
+        p
+            width: 80%
+            font-family: 'open_sansregular'
+            font-size: 1em
+            line-height: 1.5em
+            text-align: center
+            color: #838383
+        .pricing-boxes
+            margin-top: 3em
+            width: 100%
             display: flex
-            flex-direction: column
+            flex-direction: row
+            flex-wrap: wrap
             justify-content: center
-            align-items: center
-            max-width: 396px
+            .pricing-box
+                width: 24%
+                background: #fff
+                text-align: center
+                margin: 0 0.1em
+                max-height: 420px
+                transition: 0.5s
+                &:hover
+                    transform: scaleY(1.14)
+                h3
+                    font-family: 'open_sansregular'
+                    font-size: 1.8em
+                    line-height: 1.5em
+                    color: #fff
+                    background: #3598db
+                    margin: 0
+                    padding: 0.3em 1em
+                .price-value
+                    p
+                        margin: 0 auto
+                        font-family: 'open_sansregular'
+                        font-size: 2.5em
+                        font-weight: 900
+                        color: #232323
+                        span
+                            margin: 0
+                            font-size: 0.6em
+                            vertical-align: top
+                ul
+                    padding: 0
+                    margin: 0
+                    list-style: none
+                    li
+                        font-family: 'open_sansregular'
+                        font-size: 1.1em
+                        line-height: 1.3em
+                        text-align: center
+                        color: #838383
+                        padding: 0.5em
+                        display: block
+                        border-top: 1px solid #ececec
+                        transition: 0.5s
+                        &:hover
+                            background: #eee
+                            color: #3598db
+                .cart
+                    background: #3598db
+                    padding: 2em 1em
+                    a
+                        font-family: 'open_sansregular'
+                        font-size: 1.1em
+                        font-weight: 800
+                        text-transform: uppercase
+                        color: #fff
+                        background: #0d74b9
+                        padding: 0.3em 1em
 
-.about
-    height: 430px
-    background-color: #e7e7e7
-
-.testimonials
-    height: 290px
-
-.prices
-    height: 660px
-    background-color: #e7e7e7
-
-.getintouch
-    height: 240px
+.social
+    margin: 5em 0 4em 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    h3
+        font-family: 'open_sansregular'
+        font-size: 2em
+        font-weight: 900
+        text-align: center
+        color: #232323
+        margin-bottom: 0.3em
+    p
+        font-family: 'open_sansregular'
+        font-size: 1.1em
+        line-height: 1.5em
+        text-align: center
+        color: #838383
+    .icons
+        width: 257px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        img
+            opacity: 0.5
+            &:hover
+                opacity: 1
 
 footer
-    height: 135px
-    background-color: #e7e7e7
+    background: #e3e3e3
+    padding: 2em 0 1em 0
+    text-align: center
+    ul li
+        display: inline-block
+        a
+            font-family: 'open_sansregular'
+            font-size: 0.99em
+            text-align: center
+            line-height: 1.5em
+            color: #838383
+            margin-right: 2em
+            &:hover
+                color: #3598db
